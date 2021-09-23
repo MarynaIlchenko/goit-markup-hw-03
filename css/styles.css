@@ -15,12 +15,33 @@ body {
     letter-spacing: 0.03em;
 }
 
+p, h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-left: 0;
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
 .link {
     text-decoration: none;
 }
 
 .list {
     list-style: none;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /*------HEADER------ */
@@ -30,7 +51,42 @@ body {
     font-size: 14px;
     line-height: calc (16 / 14);
     letter-spacing: 0.02em;   
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-navigation {
+    display: flex;
+    align-items: center;
+}
+
+.header-list {
+    display: flex;
+    align-items: center;
+}
+
+.header-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.header-contacts-list {
+    display: flex;
+    align-items: center;
+}   
+
+.header-contacts-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.header-contacts {
+    margin-left: auto;
+}
+
 
 .logo {
     font-family: "Raleway", sans-serif;
@@ -38,6 +94,7 @@ body {
     font-size: 26px;
     line-height: calc(31 / 26);
     color: var(--accent-color);
+    margin-right: 93px;
 }
 
 .header-logo {
