@@ -1,3 +1,13 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 :root {
 --primery-title-color: #ffffff;
 --secondary-title-color: #212121;
@@ -77,6 +87,7 @@ img {
 .header-contacts-list {
     display: flex;
     align-items: center;
+
 }   
 
 .header-contacts-item:not(:last-child) {
@@ -134,6 +145,10 @@ img {
 
 /*------HERO------ */
 
+.hero-container {
+    display: flex;
+}
+
 .hero-title {
     font-weight: 900;
     font-size: 44px;
@@ -142,7 +157,6 @@ img {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--primery-title-color)
-
 }
 
 .hero-title-btn {
@@ -150,11 +164,13 @@ img {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
-    display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     cursor: pointer;
+    min-width: 200px;
+    border-radius: 4px;
+    padding: 10px 32px;
     color: var(--primery-title-color)
     }
 
@@ -166,6 +182,8 @@ img {
 .hero-title-btn:focus {
     background: #0a68b6;
 }
+
+
 
 /* ----------ABOUT---------  */
 
