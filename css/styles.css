@@ -37,6 +37,8 @@ ul {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .link {
@@ -62,8 +64,6 @@ img {
     line-height: calc (16 / 14);
     letter-spacing: 0.02em;  
     border: 1px solid #ECECEC; 
-    padding-top: 32px;
-    padding-bottom: 32px;
 }
 
 .header-container {
@@ -88,7 +88,7 @@ img {
 .header-contacts-list {
     display: flex;
     align-items: center;
-
+    margin-left: auto;
 }   
 
 .header-contacts-item:not(:last-child) {
@@ -99,14 +99,15 @@ img {
     margin-left: auto;
 }
 
-
 .logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 26px;
-    line-height: calc(31 / 26);
+    line-height: calc( 31 / 26 );
     color: var(--accent-color);
     margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .header-logo {
@@ -122,6 +123,8 @@ img {
     font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
     color: var(--header-text-color)
 }
 
@@ -137,6 +140,8 @@ img {
     font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
     color: var(--header-contacts-color)
 }
 
@@ -162,7 +167,6 @@ img {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    margin: 0 auto;
     color: var(--primery-title-color)
 }
 
@@ -176,9 +180,7 @@ img {
     letter-spacing: 0.06em;
     cursor: pointer;
     min-width: 200px;
-    border-radius: 4px;
     padding: 10px 32px;
-    margin: 30px;
     color: var(--primery-title-color)
     }
 
@@ -195,7 +197,7 @@ img {
 
 .about-container {
     align-items: center;
-    padding: 94px 0 94px 0;
+    padding: 94px 15px 94px 15px;
 }
 
 .about-list{
@@ -249,7 +251,7 @@ img {
 }
 
 .services-title-item{
-    flex-basis: calc((100% - 90px) / 3);
+    flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;
 }
 /* ----------TEAM---------  */
@@ -271,7 +273,7 @@ img {
 }
 
 .team-item{
-    flex-basis: calc((100% - 120px) / 4);
+    flex-basis: calc(100% / 4 - 30px);
     margin-left: 30px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -290,8 +292,6 @@ img {
     font-size: 16px;
     line-height: calc(19 / 16);
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 10px;
     color: var(--secondary-title-color)
 }
 
@@ -300,8 +300,13 @@ img {
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     color: var(--primery-text-color)
+}
+
+.team-item-card{
+    background: var(--primery-title-color);
+    padding: 30px 0px;
 }
 
 /* ----------FOOTER---------  */
@@ -327,7 +332,7 @@ img {
 .contacts-link{
     font-size: 14px;
     line-height: 1.71;
-    margin-top: 9px;
+    margin: 0 0 9px;
     color: var(--primery-title-color);
 }
 
@@ -389,10 +394,14 @@ img {
     margin-top: -30px;
 }
 .cases-item{
-    flex-basis: calc((100% - 90px) / 3);
+    flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;
     margin-top: 30px;
-    width: 278px;
+}
+
+.cases-item-box{
+    background-color: var(--primery-title-color);
+    border-top: none;
     border: 1px solid #EEEEEE;
 }
 
