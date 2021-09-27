@@ -61,7 +61,7 @@ img {
 .header {
     font-weight: 500;
     font-size: 14px;
-    line-height: calc (16 / 14);
+    line-height: calc( 16 / 14 );
     letter-spacing: 0.02em;  
     border: 1px solid #ECECEC; 
 }
@@ -121,7 +121,7 @@ img {
 .header-link{
     font-weight: 500;
     font-size: 14px;
-    line-height: calc(16 / 14);
+    line-height: calc( 16 / 14 );
     letter-spacing: 0.02em;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -147,16 +147,16 @@ img {
 
 .hero {
     background: var(--bg-color);
+    height: 600px;
+    padding: 200px 0 280px 0;
 }
 
 /*------HERO------ */
 
 .hero-container {
-    width: 696px;
-    height: 600px;
+    max-width: 696px;
     align-items: center;
     text-align: center;
-    padding: 200px 0 280px 0;
 }
 
 .hero-title {
@@ -182,7 +182,7 @@ img {
     min-width: 200px;
     padding: 10px 32px;
     color: var(--primery-title-color)
-    }
+}
 
 .btn {
     background-color: var(--accent-color);
