@@ -196,12 +196,12 @@ img {
 /* ----------ABOUT---------  */
 
 .about-container {
-    align-items: center;
-    padding: 94px 15px 94px 15px;
+    align-items: center; 
 }
 
 .about-list{
     display: flex;
+    padding: 94px 15px 94px 15px;
     min-width: 270px;
 }
 
@@ -311,13 +311,10 @@ img {
 
 /* ----------FOOTER---------  */
 
-.footer-container{
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-
 .footer{
     background: var(--bg-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-logo{
@@ -347,10 +344,13 @@ img {
 
 /* ----------PORTFOLIO---------  */
 
-.portfolio-container{
-    text-align: center;
+.portfolio-hero{
     padding-top: 94px;
     padding-bottom: 94px; 
+}
+
+.portfolio-container{
+    text-align: center;
 }
 
 .portfolio-list{
