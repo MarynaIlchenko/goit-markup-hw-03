@@ -63,8 +63,6 @@ img {
     font-size: 14px;
     line-height: calc( 16 / 14 );
     letter-spacing: 0.02em;  
-    padding-top: 32px;
-    padding-bottom: 32px;
     border: 1px solid #ECECEC; 
 }
 
@@ -76,7 +74,6 @@ img {
 .header-navigation {
     display: block;
     align-items: center;
-
 }
 
 .header-list {
@@ -112,8 +109,15 @@ img {
     margin-right: 93px;
 }
 
-.header-logo {
+.header-logo{
+    text-decoration: none;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.white-logo {
     color: var(--header-text-color);
+   
 }
 
 .header-list .link.current {
@@ -125,6 +129,8 @@ img {
     font-size: 14px;
     line-height: calc( 16 / 14 );
     letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
     color: var(--header-text-color)
 }
 
@@ -140,6 +146,8 @@ img {
     font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
     color: var(--header-contacts-color)
 }
 
@@ -331,13 +339,19 @@ img {
     padding-right: 15px;
 }
 
+.main-logo{
+    display: block;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
 .footer-logo{
     color: var(--primery-title-color);
 }
 
+
 .contacts-address{
     font-style: inherit;
-    margin-top: 20px;
 }
 
 .contacts-link{
@@ -347,7 +361,7 @@ img {
 }
 
 .contacts-item{
-    margin-top: 9px;
+    margin-bottom: 9px;
 }
 
 .contacts-color{
@@ -376,7 +390,6 @@ img {
 
 .portfolio-item{
     display: inline-block;
-    margin-left: 8px;
 }
 
 .portfolio-btn{
