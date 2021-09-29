@@ -218,12 +218,12 @@ img {
 
 .about-list{
     display: flex;
-    
-    min-width: 270px;
+    margin-left: -30px;
 }
 
-.about-list > .about-item {
-    margin: 10px 30px 0 0;
+.about-item{
+    flex-basis: calc( 100% / 4 - 30px);
+    margin-left: 30px;
 }
 
 .about-item-title{
@@ -231,6 +231,7 @@ img {
     font-size: 14px;
     line-height: calc(16 / 14);
     text-transform: uppercase;
+    margin-bottom: 10px;
     color: var(--secondary-title-color)
 }
 
@@ -238,8 +239,11 @@ img {
     font-weight: normal;
     font-size: 14px;
     line-height: 1.71;
+    margin-bottom: 0px;
     color: var(--primery-text-color)
 }
+
+/*---------- SERVICES------- */
 
 .services-title{
     font-weight: 700;
@@ -248,8 +252,6 @@ img {
     margin-bottom: 50px;
     color: var(--secondary-title-color)
 }
-
-/*---------- SERVICES------- */
 
 .services{
     padding-top: 0px;
@@ -342,13 +344,17 @@ img {
 .main-logo{
     display: block;
     text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc( 31 / 26 );
+    color: var(--accent-color);
     margin-bottom: 20px;
 }
 
 .footer-logo{
     color: var(--primery-title-color);
 }
-
 
 .contacts-address{
     font-style: inherit;
@@ -357,6 +363,7 @@ img {
 .contacts-link{
     font-size: 14px;
     line-height: 1.71;
+    margin-top: 0px;
     color: var(--primery-title-color);
 }
 
@@ -385,11 +392,13 @@ img {
 }
 
 .portfolio-list{
+    display: inline-flex;
+    justify-content: center;
     margin-bottom: 50px;
 }
 
-.portfolio-item{
-    display: inline-block;
+.portfolio-list > .portfolio-item:not(:last-child) {
+    margin-right: 8px;
 }
 
 .portfolio-btn{
