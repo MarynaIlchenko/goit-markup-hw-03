@@ -90,6 +90,10 @@ img {
     align-items: center;
     margin-left: auto;
 }   
+.header-contacts-link,
+.header-link{
+    display: block;
+}
 
 .header-contacts-item:not(:last-child) {
     margin-right: 50px;
@@ -367,7 +371,7 @@ img {
     color: var(--primery-title-color);
 }
 
-.contacts-item{
+.contacts-item:not(:last-child){
     margin-bottom: 9px;
 }
 
